@@ -232,6 +232,73 @@ body {
     margin: 0;
 }
 
+/* Education details styling */
+.education-details {
+    margin: 20px 0;
+}
+
+.education-gpa {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.education-coursework {
+    margin-bottom: 15px;
+}
+
+.education-coursework strong {
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.education-coursework ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.education-coursework li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.education-coursework li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+.education-skills {
+    margin-bottom: 15px;
+}
+
+.education-skills strong {
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background: #764ba2;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
 .work-description {
     list-style: none;
     padding: 0;
@@ -250,6 +317,23 @@ body {
     left: 0;
     color: #667eea;
     font-weight: bold;
+}
+
+/* Work tech styling */
+.work-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.work-tech .tech-tag {
+    background: #667eea;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
 /* Projects Section */
@@ -281,10 +365,91 @@ body {
     font-weight: 600;
 }
 
-.project-description {
+/* Project header styling */
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.project-header h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 0;
+    font-weight: 600;
+}
+
+.project-date {
+    background: #764ba2;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* Project overview and contributions styling */
+.project-overview,
+.project-contributions {
+    margin-bottom: 20px;
+}
+
+.project-overview h4,
+.project-contributions h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.project-overview p {
     color: #666;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.project-contributions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-contributions li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.project-contributions li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+.project-contributions ul ul {
+    margin: 10px 0 15px 20px;
+}
+
+.project-contributions ul ul li {
+    padding-left: 15px;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.project-contributions ul ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #764ba2;
+    font-weight: bold;
 }
 
 /* Project media (images/videos) */
@@ -310,6 +475,35 @@ body {
     border-radius: 10px;
 }
 
+/* Video placeholder styling */
+.video-placeholder {
+    background: #f8f9fa;
+    border: 2px dashed #ddd;
+    border-radius: 10px;
+    padding: 40px 20px;
+    text-align: center;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.video-placeholder:hover {
+    border-color: #667eea;
+    background: #f0f2ff;
+}
+
+.video-placeholder i {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #999;
+    display: block;
+}
+
+.video-placeholder p {
+    font-size: 16px;
+    margin: 0;
+    color: #888;
+}
+
 .project-tech {
     display: flex;
     flex-wrap: wrap;
@@ -329,6 +523,8 @@ body {
 .project-links {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .project-link {
@@ -344,12 +540,29 @@ body {
     text-decoration: underline;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 40px 0;
-    color: rgba(255, 255, 255, 0.8);
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #333;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
 }
+
+.github-link:hover {
+    background: #555;
+    transform: translateY(-1px);
+    text-decoration: none !important;
+}
+
+.github-link i {
+    font-size: 1rem;
+}
+
+/* Responsive design */
 
 /* Responsive design */
 @media (max-width: 768px) {
@@ -399,6 +612,15 @@ footer {
     
     .education-date,
     .work-date {
+        align-self: flex-start;
+    }
+    
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .project-date {
         align-self: flex-start;
     }
     
