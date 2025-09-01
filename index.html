@@ -13,20 +13,12 @@
         <header class="hero-section">
             <div class="profile-container">
                 <div class="profile-image">
-                    <!-- Replace the src with your actual photo -->
-                    <img src="profile-photo.jpg" alt="Oliver Berton" id="profile-photo">
-                    <div class="image-placeholder" id="image-placeholder">
-                        <i class="fas fa-user"></i>
-                        <p>Add your photo here</p>
-                    </div>
+                    <img src="media/headshot.jpg" alt="Oliver Berton" id="profile-photo">
                 </div>
                 <div class="profile-info">
                     <h1>Oliver Berton</h1>
-                    <p class="tagline">Robotics Engineer</p>
                     <p class="bio">
-                        Welcome to my personal website! I'm passionate about creating innovative solutions 
-                        and exploring the latest technologies. I enjoy working on challenging projects and 
-                        collaborating with talented teams to build impactful software.
+                        I am currently pursuing a Master's degree in Robotics Systems Development at Carnegie Mellon University. Within Robotics, I am interested in creating intelligent, autonomous systems that can robustly solve real-world tasks.
                     </p>
                 </div>
             </div>
@@ -61,12 +53,12 @@
                             <strong>Relevant Coursework (Through Fall 2025):</strong>
                             <ul>
                                 <li>Deep Reinforcement Learning</li>
-                                <li>Path Planning</li>
-                                <li>Computer Vision</li>
+                                <li>Path Planning and Decision Making</li>
+                                <li>Optimal Control and Reinforcement Learning</li>
                                 <li>Manipulation Estimation & Controls</li>
+                                <li>Computer Vision</li>
                                 <li>Robot Mobility</li>
                                 <li>Robot Autonomy</li>
-                                <li>Optimal Control and Reinforcement Learning</li>
                             </ul>
                         </div>
                         <div class="education-skills">
@@ -75,16 +67,15 @@
                                 <span class="skill-tag">Python</span>
                                 <span class="skill-tag">C++</span>
                                 <span class="skill-tag">Julia</span>
-                                <span class="skill-tag">ROS</span>
+                                <span class="skill-tag">ROS/ROS2</span>
                                 <span class="skill-tag">TensorFlow</span>
                                 <span class="skill-tag">PyTorch</span>
+                                <span class="skill-tag">MATLAB</span>
+                                <span class="skill-tag">Reinforcement Learning</span>
+                                <span class="skill-tag">Deep Learning</span>
                             </div>
                         </div>
                     </div>
-                    <p class="education-description">
-                        Currently pursuing advanced studies in robotics systems development 
-                        with focus on autonomous systems and intelligent robotics.
-                    </p>
                 </div>
 
                 <div class="education-item">
@@ -117,18 +108,12 @@
                                 <span class="skill-tag">C/C++</span>
                                 <span class="skill-tag">Embedded C</span>
                                 <span class="skill-tag">SystemVerilog</span>
-                                <span class="skill-tag">MATLAB</span>
                                 <span class="skill-tag">SolidWorks</span>
                                 <span class="skill-tag">Arduino</span>
                             </div>
                         </div>
                     </div>
-                    <p class="education-description">
-                        Graduated cum laude with a concentration in Embedded Systems. 
-                        Completed capstone project in embedded systems design and implementation.
-                    </p>
                 </div>
-                <!-- Add more education items as needed -->
             </div>
 
             <div class="work-experience-section">
@@ -146,9 +131,10 @@
                         <span class="tech-tag">TensorFlow</span>
                         <span class="tech-tag">Keras</span>
                         <span class="tech-tag">C++</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Neural Networks</span>
-                        <span class="tech-tag">AMD Versal</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Convolutional Neural Networks</span>
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">Hardware Acceleration</span>
                     </div>
                 </div>
 
@@ -168,6 +154,7 @@
                         <span class="tech-tag">Reinforcement Learning</span>
                         <span class="tech-tag">Keras-RL</span>
                         <span class="tech-tag">OpenAI-Gym</span>
+                        <span class="tech-tag">PyQt</span>
                     </div>
                 </div>
 
@@ -186,7 +173,6 @@
                     <div class="work-tech">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">Bash Scripting</span>
-                        <span class="tech-tag">5G Technology</span>
                         <span class="tech-tag">UAS Platform</span>
                         <span class="tech-tag">Hardware Integration</span>
                     </div>
@@ -203,34 +189,42 @@
                         </div>
                         <div class="project-overview">
                             <h4>Project Overview</h4>
-                            <p>Built a standalone robotic system capable of autonomously assembling sandwiches using a robotic manipulator. The system integrates computer vision for ingredient detection, impedance control for safe manipulation, and iterative learning control for improved performance over time.</p>
+                            <p>Alongside a team of 4, built a standalone robotic system capable of autonomously assembling sandwiches using a robotic manipulator. The system has a success rate of over 75%, and can support a variety of ingredient types. This project was done as part of the capstone course at Carnegie Mellon University.</p>
                         </div>
                         <div class="project-contributions">
                             <h4>Contributions</h4>
                             <ul>
-                                <li>Designed and implemented the computer vision pipeline for ingredient detection and pose estimation</li>
-                                <li>Developed impedance control algorithms for safe and precise robotic manipulation</li>
-                                <li>Implemented iterative learning control to improve sandwich assembly success rate from 60% to 75%</li>
-                                <li>Integrated ROS2 nodes for system coordination and real-time communication</li>
-                                <li>Led system integration and testing phases, coordinating with team of 4 members</li>
+                                <li>Led the development of the manipulation subsystem. Used Impedance control alongside Iterative Learning Control, to pick and place ingredients within 3 cm of the desired location. Integrated into rest of system using the ROS2 architecture.</li>
+                                <li>Trained a CNN based on the UNet architecture on a custom dataset to detect the top slices of cheese, meats and breads. Fed results into a vision pipeline to identify the pickup points of the different ingredients in the robot’s base frame.</li>
+                                <li>Designed custom hardare to support the use of a food-safe pneumatic end-effector.</li>
                             </ul>
                         </div>
                         <div class="project-media">
-                            <!-- Add video embed here -->
-                            <div class="video-placeholder">
-                                <i class="fas fa-video"></i>
-                                <p>Add video here</p>
-                            </div>
+                            <iframe 
+                                width="100%" 
+                                height="315" 
+                                src="https://drive.google.com/file/d/1qRx2dDTA2lUboIGY7vAU_q83lf2BBHBN/view?usp=sharing" 
+                                title="SNAAK Sandwich Making Robot Video" 
+                                frameborder="0" 
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="project-tech">
                             <span class="tech-tag">ROS2</span>
                             <span class="tech-tag">Impedance Control</span>
-                            <span class="tech-tag">CNN</span>
                             <span class="tech-tag">Computer Vision</span>
                             <span class="tech-tag">Iterative Learning Control</span>
+                            <span class="tech-tag">Franka Emika Panda</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Realsense</span>
+                            <span class="tech-tag">Path Planning and Collision Detection</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link github-link" target="_blank">
+                            <a href="https://mrsdprojects.ri.cmu.edu/2025teamc/" class="project-link website-link" target="_blank">
+                                <i class="fas fa-globe"></i>
+                                Project Website
+                            </a>
+                            <a href="https://github.com/SNAAK-CMU" class="project-link github-link" target="_blank">
                                 <i class="fab fa-github"></i>
                                 View on GitHub
                             </a>
@@ -244,33 +238,37 @@
                         </div>
                         <div class="project-overview">
                             <h4>Project Overview</h4>
-                            <p>Developed an optimal control framework for generating and stabilizing dynamic kicking motions on the Unitree G1 humanoid robot. The system uses direct collocation trajectory optimization to create physically feasible kicking trajectories while maintaining balance and stability throughout the motion.</p>
+                            <p>Our objective was to simulate a penalty-style soccer kick with a Unitree G1 Humanoid Robot and kick the ball at a specified target. To accomplish this, in Julia, we designed and implemented an optimal control framework for generating and stabilizing dynamic kicking motions on the Unitree G1 humanoid robot using direct collocation trajectory optimization. This project was done as part of the Optimal Control and Reinforcement Learning Course at Carnegie Mellon University.</p>
                         </div>
                         <div class="project-contributions">
                             <h4>Contributions</h4>
                             <ul>
-                                <li>Implemented direct collocation trajectory optimization in Julia for motion planning</li>
-                                <li>Designed LQR-based feedback controllers for trajectory stabilization</li>
-                                <li>Developed dynamic models and constraints for the humanoid robot system</li>
-                                <li>Optimized kicking trajectories for maximum accuracy and stability</li>
-                                <li>Achieved 90% accuracy on simulated test kicks through iterative refinement</li>
+                                <li>Implemented direct collocation trajectory optimization to generate the optimal kicking trajectory.</li>
+                                <li>Implemented a QP solver to determine the optimal foot location and impulse to use when striking the ball.</li>
+                                <li>Designed a Time-Varying LQR controller to track the generated trajectory, and an Infinite-Horizon LQR controller to stabilize the robot before and after the kick.</li>
+                                <li>Achieved 90% accuracy on simulated test kicks.</li>
                             </ul>
                         </div>
                         <div class="project-media">
-                            <!-- Add video embed here -->
-                            <div class="video-placeholder">
-                                <i class="fas fa-video"></i>
-                                <p>Add video here</p>
-                            </div>
+                            <video controls>
+                                <source src="media/ball_kicking_final_slomo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                         <div class="project-tech">
                             <span class="tech-tag">Julia</span>
                             <span class="tech-tag">Optimal Control</span>
                             <span class="tech-tag">LQR</span>
                             <span class="tech-tag">Trajectory Optimization</span>
+                            <span class="tech-tag">Optimization</span>
+                            <span class="tech-tag">Quadratic Programming</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link github-link" target="_blank">
+                            <a href="https://drive.google.com/file/d/1baNCbEeNHYRVjI_QtZgY7OsL3DrSKAbi/view?usp=sharing" class="project-link paper-link" target="_blank">
+                                <i class="fas fa-file-alt"></i>
+                                View Paper
+                            </a>
+                            <a href="https://github.com/a-daksh/16745_Unitree_G1_Goal_Kicking" class="project-link github-link" target="_blank">
                                 <i class="fab fa-github"></i>
                                 View on GitHub
                             </a>
@@ -284,35 +282,41 @@
                         </div>
                         <div class="project-overview">
                             <h4>Project Overview</h4>
-                            <p>Led the controls team in developing a new intuitive and modular control system for the university's human-powered submarine. The system was designed to provide precise control while maintaining simplicity for the pilot, contributing to the submarine's second-place finish at the 2023 International Submarine Races.</p>
+                            <p>As a member of the Human Powered SUbmarine Club at the University of Washington, was first a team member and later a controls team lead. Helped design a system that won best overall and best controls at the 2021 international Submarine Races. As controls lead, helped develop a system that finished second overall.</p>
                         </div>
                         <div class="project-contributions">
                             <h4>Contributions</h4>
                             <ul>
                                 <li><strong>Controls Team Lead (2022-2023):</strong></li>
                                 <ul>
-                                    <li>Led a team of 8 students in designing and implementing the new control system</li>
-                                    <li>Developed modular control architecture for easy maintenance and upgrades</li>
-                                    <li>Designed intuitive pilot interface for precise submarine maneuvering</li>
-                                    <li>Coordinated with mechanical and electrical teams for system integration</li>
+                                    <li>Led a team of 8 in the creation of a new controls system focused on intuitiveness and modularity.</li>
+                                    <li>Organized several weekly team and one-on-one meetings to mentor team members and coordinate progress.</li>
+                                    <li>Created test plans and assisted with field tests to prove system viability and robustness.</li>
+                                    <li>Coordinated with other subsytem leads for system integration.</li>
                                 </ul>
                                 <li><strong>Team Member (2020-2022):</strong></li>
                                 <ul>
-                                    <li>Contributed to mechanical design and system integration</li>
-                                    <li>Integrated Arduino-based control systems with SolidWorks-designed mechanical components</li>
+                                    <li>Designed in SolidWorks, and later manufactured a new joystick for the submarine.</li>
+                                    <li>Wrote software in Arduino to pair inputs to an electronic joystick to movement in two linear actuators.</li>
                                 </ul>
                             </ul>
                         </div>
                         <div class="project-media">
-                            <!-- Add video embed here -->
-                            <div class="video-placeholder">
-                                <i class="fas fa-video"></i>
-                                <p>Add video here</p>
-                            </div>
+                            <iframe 
+                                width="100%" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/rKFNgjInAN0?si=4hBjOCRmg78cOV6e" 
+                                title="Human Powered Submarine Video" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="project-tech">
                             <span class="tech-tag">SolidWorks</span>
                             <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">Mill</span>
+                            <span class="tech-tag">Lathe</span>
                             <span class="tech-tag">Controls Systems</span>
                             <span class="tech-tag">Team Leadership</span>
                         </div>
