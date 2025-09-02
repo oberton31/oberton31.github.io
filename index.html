@@ -135,6 +135,9 @@
                         <span class="tech-tag">Convolutional Neural Networks</span>
                         <span class="tech-tag">Deep Learning</span>
                         <span class="tech-tag">Hardware Acceleration</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">CI/CD Tools</span>
                     </div>
                 </div>
 
@@ -189,7 +192,7 @@
                         </div>
                         <div class="project-overview">
                             <h4>Project Overview</h4>
-                            <p>Alongside a team of 4, built a standalone robotic system capable of autonomously assembling sandwiches using a robotic manipulator. The system has a success rate of over 75%, and can support a variety of ingredient types. This project was done as part of the capstone course at Carnegie Mellon University.</p>
+                            <p>Alongside a team of 4, built a standalone robotic system capable of autonomously assembling sandwiches using a Franka Emika Panda robotic manipulator. The system has a success rate of over 75%, can support a variety of ingredient types, and assemble sandwiches in 2 to 3 minutes. This project was done as part of the capstone course at Carnegie Mellon University.</p>
                         </div>
                         <div class="project-contributions">
                             <h4>Contributions</h4>
@@ -200,14 +203,7 @@
                             </ul>
                         </div>
                         <div class="project-media">
-                            <iframe 
-                                width="100%" 
-                                height="315" 
-                                src="https://drive.google.com/file/d/1qRx2dDTA2lUboIGY7vAU_q83lf2BBHBN/view?usp=sharing" 
-                                title="SNAAK Sandwich Making Robot Video" 
-                                frameborder="0" 
-                                allowfullscreen>
-                            </iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/kjFnI4ULBek?si=SylijSNdRInDrLqR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="project-tech">
                             <span class="tech-tag">ROS2</span>
@@ -218,6 +214,8 @@
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Realsense</span>
                             <span class="tech-tag">Path Planning and Collision Detection</span>
+                            <span class="tech-tag">GIT</span>
+                            <span class="tech-tag">OpenCV</span>
                         </div>
                         <div class="project-links">
                             <a href="https://mrsdprojects.ri.cmu.edu/2025teamc/" class="project-link website-link" target="_blank">
@@ -269,6 +267,53 @@
                                 View Paper
                             </a>
                             <a href="https://github.com/a-daksh/16745_Unitree_G1_Goal_Kicking" class="project-link github-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Precise Bead Pouring With a Robotic Manipulator</h3>
+                            <span class="project-date">Pittsburgh, PA | Spring 2025</span>
+                        </div>
+                        <div class="project-overview">
+                            <h4>Project Overview</h4>
+                            <p>This project was part of the Robot Autonomy course at Carnegie Mellon University. The goal was to, with a Franka Emika Panda, pick up a cup, and pour a precise amount of beads from this cup into a bowl or another basin. This work is meant to serve as a foundation for future work in precise pouring of ingredients during cooking. Expiremental results showed the system had an average accuracy of ~80%, with evidence suggesting that more work in modeling bead dynamics is required to reduce error.</p>
+                        </div>
+                        <div class="project-contributions">
+                            <h4>Contributions</h4>
+                            <ul>
+                                <li>Modeled bead pouring dynamics to understand the relationship between robot motion and bead flow.</li>
+                                <li>Implemented direct collocation trajectory optimization to generate optimal pitch trajectories for precise pouring.</li>
+                                <li>Designed and implemented a PD controller for trajectory tracking on the robot manipulator.</li>
+                                <li>With MoveIt and OpenCV, created a pipeline to autonomously pick up and place the cup with beads.</li>
+                                <li>Integrated the system with FrankaPy and Franka-Interface for real robot execution.</li>
+                            </ul>
+                        </div>
+                        <div class="project-media">
+                            <div class="project-media">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/WiRGLQ-M2C4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Dynamics Modeling</span>
+                            <span class="tech-tag">ROS</span>
+                            <span class="tech-tag">Trajectory Optimization</span>
+                            <span class="tech-tag">Direct Collocation</span>
+                            <span class="tech-tag">PD Control</span>
+                            <span class="tech-tag">MoveIt</span>
+                            <span class="tech-tag">Path Planning</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1pgp-c3Z5qVecwIIcbcmdoBHYkJPaO3JG/view?usp=sharing" class="project-link paper-link" target="_blank">
+                                <i class="fas fa-file-alt"></i>
+                                View Paper
+                            </a>
+                            <a href=https://github.com/SNAAK-CMU/teamC25-robot-autonomy" class="project-link github-link" target="_blank">
                                 <i class="fab fa-github"></i>
                                 View on GitHub
                             </a>
