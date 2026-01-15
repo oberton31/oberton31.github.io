@@ -29,10 +29,6 @@
                 <i class="fab fa-linkedin"></i>
                 Connect on LinkedIn
             </a>
-            <a href="resume.pdf" target="_blank" class="btn btn-resume">
-                <i class="fas fa-file-alt"></i>
-                View Resume
-            </a>
         </div>
 
         <main class="main-content">
@@ -47,7 +43,7 @@
                     <p class="education-school">Carnegie Mellon University</p>
                     <div class="education-details">
                         <div class="education-gpa">
-                            <strong>GPA:</strong> 4.08/4.0
+                            <strong>GPA:</strong> 4.12/4.0
                         </div>
                         <div class="education-coursework">
                             <strong>Relevant Coursework (Through Fall 2025):</strong>
@@ -57,6 +53,8 @@
                                 <li>Optimal Control and Reinforcement Learning</li>
                                 <li>Manipulation Estimation & Controls</li>
                                 <li>Computer Vision</li>
+                                <li>Introduction to Deep Learning</li>
+                                <li>Integrated Planning and Learning</li>
                                 <li>Robot Mobility</li>
                                 <li>Robot Autonomy</li>
                             </ul>
@@ -125,7 +123,9 @@
                     </div>
                     <p class="work-company">AeroVironment - Simi Valley, CA</p>
                     <ul class="work-description">
-                        
+                        <li>Designed and trained a Siamese CNN with TensorFlow for image association, achieving over 90% accuracy on withheld test data.</li>
+                        <li>Integrated model into a C++ app, using a publish-subscribe model with DDS middleware to communicate with other apps, reducing the number of duplicate detections by 3x.</li>
+                        <li>Built a website with a C++ backend and JavaScript frontend to visualize the results of the app in real time.</li>
                     </ul>
                     <div class="work-tech">
                         <span class="tech-tag">TensorFlow</span>
@@ -188,22 +188,23 @@
                     <div class="project-card">
                         <div class="project-header">
                             <h3>Robotics Capstone - Sandwich Making Robot</h3>
-                            <span class="project-date">Pittsburgh, PA | January 2025 - Present</span>
+                            <span class="project-date">Pittsburgh, PA | January 2025 - November 2025</span>
                         </div>
                         <div class="project-overview">
                             <h4>Project Overview</h4>
-                            <p>Alongside a team of 4, built a standalone robotic system capable of autonomously assembling sandwiches using a Franka Emika Panda robotic manipulator. The system has a success rate of over 75%, can support a variety of ingredient types, and assemble sandwiches in 2 to 3 minutes. This project was done as part of the capstone course at Carnegie Mellon University.</p>
+                            <p>Alongside a team of 4, built a standalone robotic system capable of autonomously assembling sandwiches using a Franka Emika Panda robotic manipulator. The system has a success rate of over 85%, can support a variety of ingredient types, and assemble sandwiches in 2 to 3 minutes. This project was done as part of the capstone course at Carnegie Mellon University.</p>
                         </div>
                         <div class="project-contributions">
                             <h4>Contributions</h4>
                             <ul>
                                 <li>Led the development of the manipulation subsystem. Used Impedance control alongside Iterative Learning Control, to pick and place ingredients within 3 cm of the desired location. Integrated into rest of system using the ROS2 architecture.</li>
+                                <li>Developed, trained, and tested a model-based reinforcement learning approach based on the PETS algorithm using PyTorch to grasp shredded ingredients with a test error of less than 3 grams per grasp.</li>
                                 <li>Trained a CNN based on the UNet architecture on a custom dataset to detect the top slices of cheese, meats and breads. Fed results into a vision pipeline to identify the pickup points of the different ingredients in the robot’s base frame.</li>
                                 <li>Designed custom hardare to support the use of a food-safe pneumatic end-effector.</li>
                             </ul>
                         </div>
                         <div class="project-media">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/kjFnI4ULBek?si=SylijSNdRInDrLqR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/2i03_g8FWok?si=EL3DjK1ot230ukQK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="project-tech">
                             <span class="tech-tag">ROS2</span>
@@ -229,6 +230,85 @@
                         </div>
                     </div>
                     
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Accelerating Search-Based Planning for Multi-Robot Manipulation by Leveraging Online-Generated Experiences</h3>
+                            <span class="project-date">Pittsburgh, PA | October 2025 - November 2025</span>
+                        </div>
+                        <div class="project-overview">
+                            <h4>Project Overview</h4>
+                            <p>I completed a multi-robot manipulation project in CMU’s Path Planning and Decision Making in Robotics course, benchmarking state-of-the-art multi-agent path planning algorithms. We implemented RRT-Connect, CBS, ECBS, and xECBS, and evaluated them across four MuJoCo scenes with 4–8 manipulators in varied geometric arrangements. Our experiments showed that xECBS significantly reduced planning time by leveraging Weighted A* and reuse of prior search results, consistent with the results reported by Shaoul et al. (2024).</p>
+                        </div>
+                        <div class="project-contributions">
+                            <h4>Contributions</h4>
+                            <ul>
+                                <li>Wrote utility functions to simulate the given plan, as well as perform collision checking during planning.</li>
+                                <li>Implemented A* search that was used as the low-level planner for CBS, ECBS, and xECBS.</li>
+                                <li>Implemented the CBS algorithm.</li>
+                            </ul>
+                        </div>
+                        <div class="project-media">
+                            <video controls>
+                                <source src="media/multi_robot_planning.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Path Planning</span>
+                            <span class="tech-tag">Multi-Agent Path Planning</span>
+                            <span class="tech-tag">MuJoCo</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1Zj9hJdTq7SMHgEmBeHItSF25IeNysx6e/view?usp=sharing" class="project-link paper-link" target="_blank">
+                                <i class="fas fa-file-alt"></i>
+                                View Paper
+                            </a>
+                            <a href="https://github.com/oberton31/XePlanner" class="project-link github-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Autonomous Truck and Trailer Parking in Carla Sim</h3>
+                            <span class="project-date">Pittsburgh, PA | October 2025 - November 2025</span>
+                        </div>
+                        <div class="project-overview">
+                            <h4>Project Overview</h4>
+                            <p>As part of the Deep Reinforcement Learning course at CMU, I implemented a reinforcement learning approach to autonomously park a truck and trailer in a simulated logistics yard with hyperrealistic dynamics. This approach used a combination of Behaviour Cloning and PPO curriculum training to learn to park the truck and trailer with over 85% accuracy.</p>
+                        </div>
+                        <div class="project-contributions">
+                            <h4>Contributions</h4>
+                            <ul>
+                                <li>Set up a data collection pipeline with a steering wheel inside Carla Sim.</li>
+                                <li>Created a gym environment wrapper around Carla Sim to train the agent.</li>
+                                <li>Set up PPO training, using a curriculum approach to train the agent.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PPO</span>
+                            <span class="tech-tag">Autonomous Vehicles</span>
+                            <span class="tech-tag">Stable Baselines3</span>
+                            <span class="tech-tag">Carla Sim</span>
+                            <span class="tech-tag">Reinforcement Learning</span>
+                            <span class="tech-tag">PyTorch</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1BkqXp4enCoKRyujRCpiwaQJY-mVvZRTp/view?usp=sharing" class="project-link paper-link" target="_blank">
+                                <i class="fas fa-file-alt"></i>
+                                View Paper
+                            </a>
+                            <a href="https://github.com/oberton31/truck-parking" class="project-link github-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="project-card">
                         <div class="project-header">
                             <h3>Penalty Kicking Humanoid</h3>
